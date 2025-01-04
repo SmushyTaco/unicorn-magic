@@ -1,6 +1,6 @@
 {
 	"name": "@smushytaco/unicorn-magic",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Some useful utilities I often need",
 	"license": "MIT",
 	"private": false,
@@ -30,6 +30,13 @@
 				"default": "./dist/default.cjs"
 			}
 		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SmushyTaco/unicorn-magic.git"
+	},
+	"bugs": {
+		"url": "https://github.com/SmushyTaco/unicorn-magic/issues"
 	},
 	"engines": {
 		"node": ">=18.12.0",

@@ -24,7 +24,6 @@ export default defineConfig({
         },
         rollupOptions: {
             external: [
-                'node:util',
                 'node:child_process',
                 'promisify-child-process',
                 'node:path',

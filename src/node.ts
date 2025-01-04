@@ -1,5 +1,6 @@
 import {
     execFileSync as execFileSyncOriginal,
+    ExecFileOptions,
     type ExecFileSyncOptionsWithStringEncoding
 } from 'node:child_process';
 import {
@@ -8,7 +9,6 @@ import {
 } from 'promisify-child-process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { ExecFileOptions } from 'child_process';
 export * from './default.js';
 
 /**
