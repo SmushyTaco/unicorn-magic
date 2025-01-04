@@ -1,6 +1,6 @@
 {
 	"name": "@smushytaco/unicorn-magic",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Some useful utilities I often need",
 	"license": "MIT",
 	"private": false,
@@ -9,25 +9,18 @@
 		"email": "personal@nikanradan.com"
 	},
 	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.cts",
 	"exports": {
-		"node": {
+		".": {
 			"import": {
-				"types": "./dist/node.d.mts",
-				"default": "./dist/node.mjs"
+				"types": "./dist/index.d.mts",
+				"default": "./dist/index.mjs"
 			},
 			"require": {
-				"types": "./dist/node.d.cts",
-				"default": "./dist/node.cjs"
-			}
-		},
-		"default": {
-			"import": {
-				"types": "./dist/default.d.mts",
-				"default": "./dist/default.mjs"
-			},
-			"require": {
-				"types": "./dist/default.d.cts",
-				"default": "./dist/default.cjs"
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
 			}
 		}
 	},

@@ -11,16 +11,11 @@ export default defineConfig({
             entry: [
                 path.resolve(
                     path.dirname(fileURLToPath(import.meta.url)),
-                    'src/default.ts'
-                ),
-                path.resolve(
-                    path.dirname(fileURLToPath(import.meta.url)),
-                    'src/node.ts'
+                    'src/index.ts'
                 )
             ],
             formats: ['es', 'cjs'],
-            fileName: (format, entryName) =>
-                format === 'es' ? `${entryName}.mjs` : `${entryName}.cjs`
+            fileName: (format) => (format === 'es' ? 'index.mjs' : 'index.cjs')
         },
         rollupOptions: {
             external: [
